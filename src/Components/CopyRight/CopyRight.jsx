@@ -1,19 +1,29 @@
-import { Typography } from '@mui/material'
-import React from 'react'
+import { Typography } from "@mui/material";
+import React from "react";
 
 const CopyRight = (props) => {
-    return (
-        <a href='https://saurabhkhatmode.netlify.app/' target='_blank' rel='noreferrer' >
+  return (
+    <a
+      href="http://my-portfolio-app-react.s3-website-us-east-1.amazonaws.com/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Typography
+        variant="body1"
+        fontWeight="bold"
+        color="text.secondary"
+        align="center"
+        {...props}
+        style={{ color: "#1976d2" }}
+      >
+        {" "}
+        {new Date().getFullYear()}
+        {/* {'.'} */}
+        {" © "}
+        Developed By Ajay Wankhade
+      </Typography>
+    </a>
+  );
+};
 
-            <Typography variant="body1" fontWeight="bold" color="text.secondary" align="center" {...props} style={{ color: '#1976d2',  }}>
-                {' '}
-                {new Date().getFullYear()}
-                {/* {'.'} */}
-                {' © '}
-                Developed By Saurabh Khatmode
-            </Typography>
-        </a>
-    )
-}
-
-export default CopyRight
+export default CopyRight;
